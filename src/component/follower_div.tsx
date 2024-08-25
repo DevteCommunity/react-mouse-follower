@@ -20,8 +20,8 @@ export function FollowerDiv({ pos, options }: { pos: MousePosition; options: Mou
       initial={{
         x: pos.x,
         y: pos.y,
-        scale: 0,
-        backgroundColor: options.backgroundColor || 'black',
+        scale: 1,
+        backgroundColor: options.backgroundColor || '#f9f9f9',
         zIndex: options.zIndex || -5,
         mixBlendMode: options.mixBlendMode || 'initial',
       }}
@@ -30,7 +30,7 @@ export function FollowerDiv({ pos, options }: { pos: MousePosition; options: Mou
         y: calculatePosition().y,
         scale: options.scale != null ? options.scale : 1,
         rotate: options.rotate || 0,
-        backgroundColor: options.backgroundColor || 'black',
+        backgroundColor: options.backgroundColor || '#f9f9f9',
         zIndex: options.zIndex || -5,
         mixBlendMode: options.mixBlendMode || 'initial',
       }}

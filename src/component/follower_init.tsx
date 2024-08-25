@@ -7,7 +7,7 @@ import { AnimatePresence } from 'framer-motion';
 const defaultRadius = 12 / 2;
 
 export function FollowerInitialiserComponent() {
-  const [isHovering, setIsHovering] = useState<boolean>(false);
+  const [isHovering, setIsHovering] = useState<boolean>(true);
   const options = useMouseStore((store) => store.curSettings);
 
   useEffect(() => {
@@ -37,8 +37,8 @@ export function FollowerInitialiserComponent() {
 function ManagePosition({ options }: { options: MouseSettings }) {
 
   const [pos, setPos] = useState<MousePosition>({
-    x: 0,
-    y: 0,
+    x: -20,
+    y: -20,
   });
 
   useEffect(() => {
